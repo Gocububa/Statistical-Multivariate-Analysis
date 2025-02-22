@@ -1,28 +1,29 @@
-# Statistical-Multivariate-Analysis
-This repository contains the code and documentation for a statistical multivariate analysis project. The analyses conducted in this project cover various techniques to explore and infer relationships in high-dimensional datasets. Below is an overview of the analyses and methods used.
+# Air Quality and Public Health Impact Analysis
+### 1. Exploratory Data Analysis (EDA)
+- Initial data exploration, missing values, and outlier detection.
+- Correlation matrix visualization for understanding variable relationships.
 
-The main objectives of this project were:
+### 2. Inferences About a Mean Vector
+- Hypothesis tests to check if pollutant levels meet safety thresholds.
 
-1-Exploratory Data Analysis (EDA)
-Performed initial data exploration to understand the structure, patterns, and key characteristics of the dataset.
+### 3. Comparison of Multivariate Means (MANOVA)
+- Multivariate analysis of variance to assess if pollutant levels (PM10, PM2.5, SO2, NO2, O3) differ across temperature ranges.
 
-2-Inferences About a Mean Vector
-Conducted hypothesis testing to draw conclusions about the population mean vector based on sample data.
+### 4. Principal Component Analysis (PCA) & Principal Component Regression
+- **PCA:** Used to reduce multicollinearity and extract principal components.
+- **Regression:** Built a model using principal components to predict *Health Impact Score*.
 
-3-Comparisons of Several Multivariate Means
-Analyzed whether multiple groups significantly differ in their multivariate mean vectors using appropriate statistical tests.
+### 5. Factor Analysis & Factor Rotation
+- Identified latent factors among variables.
+- Applied factor rotation for better interpretability.
 
-4-Principal Components Analysis (PCA) and Principal Components Regression
-Reduced data dimensionality while retaining variance and developed regression models using principal components as predictors.
+### 6. Discrimination & Classification (LDA)
+- **Linear Discriminant Analysis (LDA)** for classifying **Air Quality Index (AQI)** as "Acceptable" or "Unhealthy".
+- Achieved **96% accuracy** in classification.
 
-5-Factor Analysis and Factor Rotation
-Identified underlying latent factors in the dataset and applied factor rotation techniques to improve interpretability.
+### 7. Clustering Analysis
+- Applied **Hierarchical Clustering** (Agglomerative & Divisive).
+- Used **Elbow Method** to determine the optimal number of clusters (**k=4**).
 
-6-Discrimination and Classification
-Built classification models to assign observations to predefined groups and evaluated model performance.
-
-7-Clustering
-Applied unsupervised learning techniques to group similar observations without prior knowledge of group labels.
-
-8-Canonical Correlation Analysis
-Explored relationships between two sets of variables by finding linear combinations that maximize correlation.
+### 8. Canonical Correlation Analysis
+- Examined relationships between weather variables (temperature, wind speed, humidity) and pollutant levels.
